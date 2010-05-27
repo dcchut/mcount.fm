@@ -49,8 +49,6 @@ class LastFM
 		// make the request
 		$result = $this->_load($url);
 		
-		var_dump($result);
-		
 		// can we interpret this as an XML object?
 		$xml    = simplexml_load_string($result);
 		
