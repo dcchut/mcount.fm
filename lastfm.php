@@ -40,9 +40,7 @@ class LastFM
 	public function request($method, array $parameters)
 	{
 		// build our new parameter array
-		$new_parameters = array_merge(array('method'  => $method, 
-											'api_key' => $this->_api_key),
-									  $parameters);
+		$new_parameters = array_merge(array('method'  => $method, 'api_key' => $this->_api_key), $parameters);
 									  
 		$url = $this->_build_url($new_parameters);
 		
