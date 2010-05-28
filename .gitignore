@@ -1,2 +1,4 @@
 *.xml
+*.txt
+*.dat
 config.php
